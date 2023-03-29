@@ -35,6 +35,10 @@ header {
         font-family: Ubuntu;
     }
 
+    header > a {
+        text-decoration: none;
+    }
+
 /* Main  */
 
     /* Section.Menu */
