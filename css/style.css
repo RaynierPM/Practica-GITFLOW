@@ -1,0 +1,77 @@
+/* Globales */
+*, *::after, *::before {margin: 0; padding: 0; box-sizing: border-box;}
+
+:root {
+    --main: #171717;
+    --Secondary: #444444;
+    --white: #EDEDED; 
+    --complementary: #DA0037;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url('../fonts/Ubuntu-Regular.ttf');
+}
+
+h2 {
+    font-family: Ubuntu;
+    text-decoration: underline var(--complementary);
+    text-shadow: var(--main) 1px 1px 1px;
+}
+
+/* Header */
+header {
+    background-color:  var(--main);
+    background-image: url(../src/MainBackground.jpg);
+    background-position: center;
+    background-size: cover;
+
+    height: 20vh;
+}
+
+    header h1 {
+        color: var(--white);
+        text-shadow: var(--Secondary) 1.5px 1.5px 1px;
+        font-family: Ubuntu;
+    }
+
+/* Main  */
+
+    /* Section.Menu */
+    section.menu {
+        background-color: var(--main);
+        min-height: 400px;
+    }
+
+        section .btn {
+            border-bottom: var(--white) solid 1px;
+
+            transition: background .4s ease-in-out, color .6s linear, border-bottom .4s ease-in-out;
+        }
+
+        section .btn:hover {
+            border-bottom: var(--main) solid 1px;
+            color: var(--main)!important;
+            background-color: var(--white);
+        }
+
+    /* Section.definicion */
+    .definicion {
+        background: rgb(23,23,23);
+        background: linear-gradient(225deg, rgba(23,23,23,0.8156512605042017) 0%, rgba(68,68,68,0.8100490196078431) 35%, rgba(218,0,55,0.8828781512605042) 100%);
+    }
+        .definicion h2 {
+            color: var(--white)
+        }
+
+        .definicion p {
+            color: var(--white)
+        }
+
+ /* Footer */
+ footer {
+    background-color: var(--main);
+    color: var(--white);
+
+    max-height: 50px;
+ }
