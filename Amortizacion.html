@@ -21,27 +21,30 @@
                 <h2 class="text-center">¿Qué es una tabla de amortización?</h2>
                 <p class="p-2">Una tabla de amortizaciones es una herramienta financiera que muestra la distribución de los pagos de un préstamo en el tiempo. Esta tabla muestra el desglose detallado de cada pago, incluyendo la cantidad de capital e intereses pagados en cada período, así como el saldo pendiente del préstamo después de cada pago. La tabla se genera utilizando una fórmula matemática específica que se utiliza para calcular el pago mensual o periódico requerido para pagar el préstamo en un período de tiempo determinado. Las tablas de amortización son comúnmente utilizadas por los prestamistas y los prestatarios para entender mejor el costo total de un préstamo y para planificar los pagos mensuales necesarios para liquidar el préstamo.</p>
             </article>
-            <article>
-                <h3>Datos del préstamo</h3>
-                <form id="formAmortizacion">
+            <article class="d-flex justify-content-center flex-wrap">
+                <h3 class="w-100 text-center">Datos del préstamo</h3>
+                <form id="formAmortizacion" class="w-75">
                     <form>
                         <div class="mb-3">
                           <label for="monto" class="form-label">Monto</label>
-                          <input type="number" class="form-control" id="monto" aria-describedby="montohelp">
+                          <input type="number" class="form-control" id="monto" name="monto" aria-describedby="montohelp" step=".01" placeholder="Solo 2 decimales aceptados" min="0">
                           <div id="montohelp" class="form-text">Cantidad total del préstamo.</div>
                         </div>
                         <div class="mb-3">
                           <label for="interes" class="form-label">Tasa de interes anual</label>
-                          <input type="number" class="form-control" id="interes" aria-describedby="interesHelp">
+                          <input type="number" class="form-control" id="interes" name="interes" aria-describedby="interesHelp" step=".01" placeholder="Solo 2 decimales aceptados" min="0">
                           <div id="interesHelp" class="form-text">(Ingrese el valor en %, ejemplo: 65)</div>
                         </div>
                         <div class="mb-3">
-                            <label for="tiempo" class="form-label">Tiempo del prestamo (meses)</label>
-                            <input type="number" class="form-control" id="tiempo" placeholder="Cantidad de meses">
+                            <label for="plazo" class="form-label">plazo del prestamo (meses)</label>
+                            <input type="number" class="form-control" id="plazo" name="plazo" placeholder="Cantidad de meses" min="0">
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary">Calcular</button>
                       </form>
                 </form>
+            </article>
+            <article class="tablaAmoritizacion p-3 mt-2">
+                
             </article>
         </section>
     </main>
