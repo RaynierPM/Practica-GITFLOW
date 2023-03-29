@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: Ubuntu;
-    src: url('../fonts/Ubuntu-Regular.ttf');
+    src: url('../fonts/JosefinSans-VariableFont_wght.ttf');
 }
 
 h2 {
@@ -41,6 +41,11 @@ header {
 
 /* Main  */
 
+
+    /* Sections */
+        section p, section h2 {
+            color: var(--white)
+        }
     /* Section.Menu */
     section.menu {
         background-color: var(--main);
@@ -64,12 +69,14 @@ header {
         background: rgb(23,23,23);
         background: linear-gradient(225deg, rgba(23,23,23,0.8156512605042017) 0%, rgba(68,68,68,0.8100490196078431) 35%, rgba(218,0,55,0.8828781512605042) 100%);
     }
-        .definicion h2 {
-            color: var(--white)
-        }
 
-        .definicion p {
-            color: var(--white)
+    
+    /* Amortizacon.html - section.amortizacion */
+    .amortizacion {
+        background-color: #e3e3e3;
+    }    
+        .amortizacion p, .amortizacion h2 {
+            color: var(--main);
         }
 
  /* Footer */

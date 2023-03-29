@@ -15,8 +15,35 @@
         <a href="index.html"><h1>Calculadora finenciera</h1></a>
     </header>
 
-    <main class="d-flex">
-
+    <main class="d-flex justify-content-center">
+        <section class="amortizacion w-75 p-2 mt-2 mx-2 shadow">
+            <article>
+                <h2 class="text-center">¿Qué es una tabla de amortización?</h2>
+                <p class="p-2">Una tabla de amortizaciones es una herramienta financiera que muestra la distribución de los pagos de un préstamo en el tiempo. Esta tabla muestra el desglose detallado de cada pago, incluyendo la cantidad de capital e intereses pagados en cada período, así como el saldo pendiente del préstamo después de cada pago. La tabla se genera utilizando una fórmula matemática específica que se utiliza para calcular el pago mensual o periódico requerido para pagar el préstamo en un período de tiempo determinado. Las tablas de amortización son comúnmente utilizadas por los prestamistas y los prestatarios para entender mejor el costo total de un préstamo y para planificar los pagos mensuales necesarios para liquidar el préstamo.</p>
+            </article>
+            <article>
+                <h3>Datos del préstamo</h3>
+                <form id="formAmortizacion">
+                    <form>
+                        <div class="mb-3">
+                          <label for="monto" class="form-label">Monto</label>
+                          <input type="number" class="form-control" id="monto" aria-describedby="montohelp">
+                          <div id="montohelp" class="form-text">Cantidad total del préstamo.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="interes" class="form-label">Tasa de interes anual</label>
+                          <input type="number" class="form-control" id="interes" aria-describedby="interesHelp">
+                          <div id="interesHelp" class="form-text">(Ingrese el valor en %, ejemplo: 65)</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tiempo" class="form-label">Tiempo del prestamo (meses)</label>
+                            <input type="number" class="form-control" id="tiempo" placeholder="Cantidad de meses">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                </form>
+            </article>
+        </section>
     </main>
 
     <footer class="p-2 my-2 d-flex flex-column flex-wrap">
@@ -25,5 +52,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="Amortizacion.js"></script>
 </body>
 </html>
