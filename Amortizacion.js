@@ -1,12 +1,5 @@
 (function () {
     document.addEventListener("DOMContentLoaded", () => {
-
-        // Funcion para redondear
-        let round = num => (Math.round(num*100)/100)
-        
-        
-        
-        
         
         const formulario = document.querySelector('form#formAmortizacion');
         function mostrarAmortizacion({monto, interes, plazo}) {     
@@ -20,10 +13,10 @@
             let tabla = {'cuota': cuota, 'plazo':plazo, 'filas':[]}
 
             for (let i = 0; i < plazo; i++) {
-                let interesPagado = round(interesMensual*capital);
-                let capitalPagado = round(cuota-interesPagado);
+                let interesPagado = (interesMensual*capital).toFixed(2);
+                let capitalPagado = (cuota-interesPagado).toFixed(2);
                 capital -= capitalPagado;
-                capital = round(capital)
+                capital = capital.toFixed(2)
                 if (capital < 0) capital = 0;
 
                 let fila = {'interesPagado':interesPagado, 'capitalPagado':capitalPagado, 'capitalRestante': capital}
